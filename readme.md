@@ -1,6 +1,6 @@
 # H2O mruby WordPress
 
-libraries of mruby for WordPress Application Server
+mruby libraries for WordPress Application Server
 
 * cache-control.rb
 * filesystem.rb
@@ -10,17 +10,15 @@ libraries of mruby for WordPress Application Server
 # Required
 
 * HTTP server [H2O](https://h2o.examp1e.net/) version 2.1.0 later
-* Using DSL for access control lists (acl)
+* Using DSL for [access control list (acl)](https://h2o.examp1e.net/configure/access_control.html)
 
 # Installation
 
-git clone https://github.com/thingsym/h2o-mruby-wordpress
+`git clone https://github.com/thingsym/h2o-mruby-wordpress`
 
 # Configuration settings
 
 edit /etc/h2o/h2o.conf
-
-`vi /etc/h2o/h2o.conf`
 
 ```yml
 hosts:
