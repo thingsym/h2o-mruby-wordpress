@@ -5,7 +5,7 @@ mruby libraries for WordPress Application Server
 * cache-control.rb
 * comment.rb
 * filesystem.rb
-* referrer.rb
+* referer.rb
 * remote-address.rb
 * user-agent.rb
 
@@ -30,7 +30,7 @@ hosts:
         mruby.handler-file: /path/to/h2o-mruby-wordpress/filesystem.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/remote-address.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/user-agent.rb
-        mruby.handler-file: /path/to/h2o-mruby-wordpress/referrer.rb
+        mruby.handler-file: /path/to/h2o-mruby-wordpress/referer.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/cache-control.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/comment.rb
         file.dir: /var/www/html
