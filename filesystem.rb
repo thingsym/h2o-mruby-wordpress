@@ -11,4 +11,9 @@ acl {
   deny { path =~ /wp\-content\/.*\.php/ }
   # deny { path =~ /wp\-admin\/install\.php/ }
   # deny { path =~ /xmlrpc\.php/ }
+
+  # for backup and security plugins
+  deny { path =~ /wp\-content\/uploads\/backwpup\-.*/ }
+  deny { path =~ /wp\-content\/uploads\/ithemes\-security/ }
+  deny { path =~ /wp\-content\/uploads\/sucuri/ }
 }
