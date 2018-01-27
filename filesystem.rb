@@ -10,7 +10,7 @@ acl {
   deny { path =~ /wp\-admin\/includes\/.*\.php/ }
   deny { path =~ /wp\-content\/.*\.php/ }
   # deny { path =~ /wp\-admin\/install\.php/ }
-  
+
   # for backup and security plugins
   deny { path =~ /wp\-content\/uploads\/backwpup\-.*/ }
   deny { path =~ /wp\-content\/uploads\/ithemes\-security/ }
