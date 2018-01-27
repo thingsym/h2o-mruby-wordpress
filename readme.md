@@ -9,6 +9,7 @@ mruby libraries for WordPress Application Server
 * referer.rb
 * remote-address.rb
 * user-agent.rb
+* wp-admin.rb
 * wp-json.rb
 
 ## Required
@@ -37,6 +38,7 @@ hosts:
         mruby.handler-file: /path/to/h2o-mruby-wordpress/wp-json.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/pingback.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/comment.rb
+        mruby.handler-file: /path/to/h2o-mruby-wordpress/wp-admin.rb
         file.dir: /var/www/html
         redirect:
           url: /index.php/
