@@ -1,5 +1,5 @@
 lambda do |env|
-  if /\/index\.php/.match(env["PATH_INFO"]) && /rest_route=/.match(env["QUERY_STRING"])
+  if /rest_route=/.match(env["QUERY_STRING"])
     return [403, {}, ["Forbidden"]]
   end
 
