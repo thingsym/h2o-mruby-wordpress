@@ -2,15 +2,17 @@
 
 mruby libraries for WordPress Application Server
 
+* admin-user-login.rb
 * cache-control.rb
 * comment.rb
+* directory-traversal.rb
 * filesystem.rb
-* pingback.rb
 * referer.rb
 * remote-address.rb
 * user-agent.rb
 * wp-admin.rb
 * wp-json.rb
+* xmlrpc.rb
 
 ## Required
 
@@ -31,13 +33,15 @@ hosts:
     paths:
       "/":
         mruby.handler-file: /path/to/h2o-mruby-wordpress/filesystem.rb
+        mruby.handler-file: /path/to/h2o-mruby-wordpress/directory-traversal.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/remote-address.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/user-agent.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/referer.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/cache-control.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/wp-json.rb
-        mruby.handler-file: /path/to/h2o-mruby-wordpress/pingback.rb
+        mruby.handler-file: /path/to/h2o-mruby-wordpress/xmlrpc.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/comment.rb
+        mruby.handler-file: /path/to/h2o-mruby-wordpress/admin-user-login.rb
         mruby.handler-file: /path/to/h2o-mruby-wordpress/wp-admin.rb
         file.dir: /var/www/html
         redirect:
