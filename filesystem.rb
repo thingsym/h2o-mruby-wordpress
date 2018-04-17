@@ -1,4 +1,7 @@
 acl {
+  allow { path =~ /wp\-includes\/.*\/wp\-tinymce\.php/ }
+  allow { path =~ /wp\-includes\/.*\/ms\-files\.php/ }
+
   deny { path =~ /readme\.[html|txt]/ }
   deny { path =~ /license\.txt/ }
   deny { path =~ /\.htaccess/ }
