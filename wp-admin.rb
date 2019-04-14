@@ -10,6 +10,6 @@ acl {
   # use( Htpasswd.new("/path/to/h2o-mruby-wordpress/.htpasswd", "realm") ) { path.start_with?("/wp-login.php") }
   # use( Htpasswd.new("/path/to/h2o-mruby-wordpress/.htpasswd", "realm") ) { path.start_with?("/wp-admin") }
 
-  deny { path.start_with?("/wp-login.php") }
-  deny { path.start_with?("/wp-admin") }
+  # deny { path.start_with?("/wp-login.php") }
+  # deny { path.start_with?("/wp-admin") }
 }
