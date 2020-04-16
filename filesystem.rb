@@ -18,4 +18,8 @@ acl {
   deny { path =~ /wp\-content\/uploads\/backwpup\-.*/ }
   deny { path =~ /wp\-content\/uploads\/ithemes\-security/ }
   deny { path =~ /wp\-content\/uploads\/sucuri/ }
+
+  # for prevent scan
+  deny { path =~ /wp\-config/ }
+  deny { path =~ /searchreplacedb2\.php/ }
 }
